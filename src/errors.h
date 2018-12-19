@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string>
 
-#include "rdkafkacpp.h"
+#include "/usr/local/include/librdkafka/rdkafkacpp.h"
 
 #include "src/common.h"
 

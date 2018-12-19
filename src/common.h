@@ -16,8 +16,8 @@
 #include <string>
 #include <vector>
 
-#include "rdkafkacpp.h"
-#include "rdkafka.h"  // NOLINT
+#include "/usr/local/include/librdkafka/rdkafkacpp.h"
+#include "/usr/local/include/librdkafka/rdkafka.h"  // NOLINT
 
 #include "src/errors.h"
 

@@ -2,7 +2,7 @@
   "variables": {
     # may be redefined in command line on configuration stage
     # "BUILD_LIBRDKAFKA%": "<!(echo ${BUILD_LIBRDKAFKA:-1})"
-    "BUILD_LIBRDKAFKA%": "<!(node ./util/get-env.js BUILD_LIBRDKAFKA 1)",
+    "BUILD_LIBRDKAFKA%": "<!(node ./util/get-env.js BUILD_LIBRDKAFKA 0)",
   },
   "targets": [
     {
@@ -113,11 +113,8 @@
                 # .deb packages.
                 {
                   "libraries": [
-                    "/usr/local/lib/librdkafka.so", 
+                    "/usr/local/lib/librdkafka.so",
                     "/usr/local/lib/librdkafka++.so"
-                  ],
-                  "include_dirs": [
-                      "/usr/local/include/librdkafka",
                   ],
                   "cflags_cc!": [
                     "-fno-rtti"
