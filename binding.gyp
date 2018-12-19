@@ -116,6 +116,9 @@
                     "/usr/local/lib/librdkafka.so", 
                     "/usr/local/lib/librdkafka++.so"
                   ],
+                  "include_dirs": [
+                        "/usr/local/include/librdkafka",
+                  ],
                   "cflags_cc!": [
                     "-fno-rtti"
                   ],
