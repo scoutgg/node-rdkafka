@@ -76,7 +76,7 @@
           },
           {
             'conditions': [
-              [ "<(BUILD_LIBRDKAFKA)==1",
+              [ "<(BUILD_LIBRDKAFKA)==0",
                 {
                   "dependencies": [
                     "deps/librdkafka.gyp:librdkafka"
@@ -117,7 +117,7 @@
                     "/usr/local/lib/librdkafka++.so"
                   ],
                   "include_dirs": [
-                        "/usr/local/include/librdkafka",
+                      "/usr/local/include/librdkafka",
                   ],
                   "cflags_cc!": [
                     "-fno-rtti"
